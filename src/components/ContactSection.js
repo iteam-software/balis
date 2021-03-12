@@ -19,9 +19,12 @@ function ContactSection() {
         padding-top: 10px;
         background-color: #424242;
         color: white;
-        height: 100vh;
+        height: 60vh;
         position: relative;
         transform: translateY(-1%);
+        @media (min-width: 768px) {
+          height: 100vh;
+        }
       `}
     >
       <div
