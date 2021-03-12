@@ -1,26 +1,27 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import React from "react";
+import splash from "../images/splash.png";
 import { StaticImage } from "gatsby-plugin-image";
 function Splash() {
   return (
     <section
       css={css`
         position: relative;
+        height: 100vh;
         background-color: #fff;
       `}
     >
       <StaticImage
         src="../images/splash.png"
         alt="Architechture Structure"
-        css={css`
-          height: 100vh;
-          position: absolute;
-          left: 0;
-          overflow: hidden;
-          font-family: var(--font-primary);
-          top: 0;
-        `}
+        style={{
+          height: "100vh",
+          position: "absolute",
+          left: "0",
+          fontFamily: "var(--font-primary)",
+          top: "0",
+        }}
       />
       <div
         css={css`
@@ -29,7 +30,6 @@ function Splash() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          position: absolute;
           top: 0;
           width: 66%;
           left: 0;
@@ -41,12 +41,17 @@ function Splash() {
             z-index: 1;
             margin-top: 60px;
             text-transform: uppercase;
+            line-height: 1rem;
+
+            margin: 0;
             font-size: 40px;
           `}
         >
           <h1>Construction Cost Estimating</h1>
           <h1
             css={css`
+              margin: 0;
+              line-height: 1rem;
               text-align: center;
             `}
           >
