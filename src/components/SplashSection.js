@@ -75,7 +75,7 @@ function Splash() {
           </h1>
           <p
             css={css`
-              margin: 80px auto auto auto;
+              margin: 40px auto auto auto;
               font-size: 18px;
               line-height: 1.5rem;
               text-align: center;
@@ -84,6 +84,9 @@ function Splash() {
               min-width: 250px;
               height: auto;
               padding: 20px;
+              @media (min-width: 768px) {
+                margin: 80px auto auto auto;
+              }
             `}
           >
             Balis & Company is an independent consulting firm founded in 1981,
