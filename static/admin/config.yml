@@ -5,13 +5,23 @@ backend:
 
 media_folder: static/assets
 public_folder: /assets
+
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: splash
+    label: Splash
+    folder: splash
     create: true
     fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+      - { name: subtitle, label: Subtitle }
+      - { name: about, label: About, widget: text } 
+
+  - name: contact
+    label: Contact
+    folder: contact
+    create: true
+    fields:
+      - { name: name, label: Title }
+      - { name: title, label: Subtitle }
+      - { name: email, label: Email }  
+      - { name: phone, label: Phone } 

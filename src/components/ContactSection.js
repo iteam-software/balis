@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import { StaticImage } from "gatsby-plugin-image";
-import skyline from "../images/skyline.png";
 import React from "react";
 
 function ContactSection() {
