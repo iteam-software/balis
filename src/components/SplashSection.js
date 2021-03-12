@@ -15,55 +15,75 @@ function Splash() {
       <StaticImage
         src="../images/splash.png"
         alt="Architechture Structure"
+        css={css`
+          @media (min-width: 1268px) {
+            display: inline-block;
+          }
+          display: none;
+        `}
         style={{
           height: "100vh",
           position: "absolute",
           left: "0",
-          fontFamily: "var(--font-primary)",
           top: "0",
         }}
       />
       <div
         css={css`
-          margin-left: 33%;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          width: 100%;
           top: 0;
-          width: 66%;
           left: 0;
+          @media (min-width: 1268px) {
+            width: 66%;
+            margin-left: 33%;
+          }
         `}
       >
         <StaticImage src="../images/balis-logo.png" alt="logo" />
         <div
           css={css`
             z-index: 1;
-            margin-top: 60px;
             text-transform: uppercase;
-            line-height: 1rem;
-
-            margin: 0;
-            font-size: 40px;
+            margin-top: 60px;
+            text-align: center;
+            font-size: 24px;
+            @media (min-width: 1268) {
+              font-size: 44px;
+              line-height: 1rem;
+            }
           `}
         >
           <h1>Construction Cost Estimating</h1>
           <h1
             css={css`
               margin: 0;
-              line-height: 1rem;
               text-align: center;
+              font-size: 24px;
+              line-height: 0.75rem;
+              @media (min-width: 1268) {
+                font-size: 56px;
+                letter-spacing: 1.2rem;
+                line-height: 1rem;
+              }
             `}
           >
             & Project Controls
           </h1>
           <p
             css={css`
-              margin: auto;
-              font-size: 16px;
+              margin: 80px auto auto auto;
+              font-size: 18px;
+              line-height: 1.5rem;
+              text-align: center;
               text-transform: none;
-              width: 500px;
+              max-width: 650px;
+              min-width: 250px;
               height: auto;
+              padding: 20px;
             `}
           >
             Balis & Company is an independent consulting firm founded in 1981,

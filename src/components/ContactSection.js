@@ -51,8 +51,8 @@ function ContactSection() {
           </a>
         </div>
       </div>
-      <img
-        src={skyline}
+      <StaticImage
+        src="../images/skyline.png"
         alt="Albuquerque Skyline"
         css={css`
           position: absolute;
