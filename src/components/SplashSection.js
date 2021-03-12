@@ -51,7 +51,7 @@ function Splash() {
             margin-top: 60px;
             text-align: center;
             font-size: 24px;
-            @media (min-width: 1268) {
+            @media (min-width: 1268px) {
               font-size: 44px;
               line-height: 1rem;
             }
@@ -64,7 +64,7 @@ function Splash() {
               text-align: center;
               font-size: 24px;
               line-height: 0.75rem;
-              @media (min-width: 1268) {
+              @media (min-width: 1268px) {
                 font-size: 56px;
                 letter-spacing: 1.2rem;
                 line-height: 1rem;
