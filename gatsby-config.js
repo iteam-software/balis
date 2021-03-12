@@ -3,6 +3,12 @@ module.exports = {
     title: "balis-co",
     siteUrl: "https://balis.netlify.app"
   },
+  flags: {
+    DEV_SSR: false,
+    FAST_DEV: false,
+    PRESERVE_WEBPACK_CACHE: false,
+    PARALLEL_SOURCING: false,
+  },
   plugins: [
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-emotion",
