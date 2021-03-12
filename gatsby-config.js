@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "balis-co",
+    siteUrl: "balis.netlify.app"
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
