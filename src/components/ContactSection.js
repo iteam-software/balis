@@ -2,8 +2,15 @@
 import { css, jsx } from "@emotion/react";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import { useContact } from "../hooks/useContact";
 
 function ContactSection() {
+  const {
+    name,
+    title,
+    phone,
+    email,
+  } = useContact().contact[0].childMarkdownRemark.frontmatter;
   const linkStyle = css`
     color: #fff;
     font-weight: 700;
@@ -30,39 +37,53 @@ function ContactSection() {
         css={css`
           display: grid;
           place-items: center;
-          margin-top: 150px;
+          margin-top: 80px;
+          @media (min-width: 768px) {
+            margin-top: 150px;
+          }
         `}
       >
         <h1
           css={css`
             text-transform: uppercase;
-            font-size: 24px;
+            font-size: 40px;
           `}
         >
           Contact
         </h1>
-        <div>Jon Balis, president</div>
-        <div>
-          <a href="mailto:jon@balisnm.com" css={linkStyle}>
-            jon@balisnm.com
-          </a>
-        </div>
-        <div>
-          <a href="tel:1-505-883-7990" css={linkStyle}>
-            (505)883-7990
-          </a>
+        <div
+          css={css`
+            font-size: 18px;
+            text-align: center;
+          `}
+        >
+          <div>
+            {name}, {title}
+          </div>
+          <div>
+            <a href="mailto:jon@balisnm.com" css={linkStyle}>
+              {email}
+            </a>
+          </div>
+          <div>
+            <a href="tel:1-505-883-7990" css={linkStyle}>
+              {phone}
+            </a>
+          </div>
         </div>
       </div>
-      <StaticImage
-        src="../images/skyline.png"
-        alt="Albuquerque Skyline"
-        css={css`
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          transform: translateY(2%);
-        `}
-      />
+      <div>
+        <StaticImage
+          src="../images/skyline.png"
+          alt="Albuquerque Skyline"
+          css={css`
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateY(2%);
+          `}
+        />
+      </div>
     </section>
   );
 }

@@ -1,9 +1,15 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
 import React from "react";
-import splash from "../images/splash.png";
 import { StaticImage } from "gatsby-plugin-image";
+import { useSplash } from "../hooks/useSplash";
 function Splash() {
+  const {
+    title,
+    subtitle,
+    about,
+  } = useSplash().splash[0].childMarkdownRemark.frontmatter;
+  console.log(title, subtitle, about);
   return (
     <section
       css={css`
@@ -53,11 +59,11 @@ function Splash() {
             font-size: 24px;
             @media (min-width: 1268px) {
               font-size: 44px;
-              line-height: 1rem;
+              line-height: 1em;
             }
           `}
         >
-          <h1>Construction Cost Estimating</h1>
+          <h1>{title}</h1>
           <h1
             css={css`
               margin: 0;
@@ -67,11 +73,11 @@ function Splash() {
               @media (min-width: 1268px) {
                 font-size: 56px;
                 letter-spacing: 1.2rem;
-                line-height: 1rem;
+                line-height: 1em;
               }
             `}
           >
-            & Project Controls
+            {subtitle}
           </h1>
           <p
             css={css`
@@ -89,14 +95,7 @@ function Splash() {
               }
             `}
           >
-            Balis & Company is an independent consulting firm founded in 1981,
-            providing construction cost analysis to architects, engineers,
-            facility owners and public agencies. Major services include
-            construction cost estimating from programming through bid analysis
-            phases, project scheduling, life cycle costing, and presentation of
-            value engineering sessions. Our staff of seven includes one Project
-            Management Professional, one Registered Architect and one Certified
-            Professional Estimator.
+            {about}
           </p>
         </div>
       </div>
