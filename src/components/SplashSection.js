@@ -25,7 +25,8 @@ function Splash() {
           @media (min-width: 1268px) {
             display: inline-block;
           }
-          display: none;
+          display: absolute;
+          opacity: .1
         `}
         style={{
           height: "100vh",

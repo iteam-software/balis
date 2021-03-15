@@ -37,7 +37,7 @@ function ContactSection() {
         css={css`
           display: grid;
           place-items: center;
-          margin-top: 80px;
+          margin-top: 53px;
           @media (min-width: 768px) {
             margin-top: 150px;
           }
@@ -77,10 +77,15 @@ function ContactSection() {
           src="../images/skyline.png"
           alt="Albuquerque Skyline"
           css={css`
+          height: 225px;
+          overflow: hidden;
             position: absolute;
             bottom: 0;
             left: 0;
             transform: translateY(2%);
+            @media (min-width: 768px) {
+              height: auto;
+            }
           `}
         />
       </div>
