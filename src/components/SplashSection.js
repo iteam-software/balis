@@ -24,6 +24,7 @@ function Splash() {
         css={css`
           @media (min-width: 1268px) {
             display: inline-block;
+            opacity: .9;
           }
           display: absolute;
           opacity: .1
