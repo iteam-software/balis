@@ -28,6 +28,7 @@ function ContactSection() {
         height: 60vh;
         position: relative;
         transform: translateY(-1%);
+        z-index: 100;
         @media (min-width: 768px) {
           height: 100vh;
         }
