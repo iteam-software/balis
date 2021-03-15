@@ -18,24 +18,6 @@ function Splash() {
         background-color: #fff;
       `}
     >
-      <StaticImage
-        src="../images/splash.png"
-        alt="Architechture Structure"
-        css={css`
-          @media (min-width: 1268px) {
-            display: inline-block;
-            opacity: .9;
-          }
-          display: absolute;
-          opacity: .1
-        `}
-        style={{
-          height: "100vh",
-          position: "absolute",
-          left: "0",
-          top: "0",
-        }}
-      />
       <div
         css={css`
           display: flex;
@@ -51,10 +33,32 @@ function Splash() {
           }
         `}
       >
-        <StaticImage src="../images/balis-logo.png" alt="logo" />
+        <StaticImage
+          src="../images/balis-logo.png"
+          alt="logo"
+        />
+        <StaticImage
+          src="../images/splash.png"
+          alt="Architechture Structure"
+          css={css`
+            @media (min-width: 1268px) {
+              display: inline-block;
+              opacity: 0.9;
+            }
+            display: absolute;
+            opacity: 0.1;
+          `}
+          style={{
+            height: "100vh",
+            position: "absolute",
+            left: "0",
+            top: "0",
+            zIndex: "1",
+          }}
+        />
         <div
           css={css`
-            z-index: 1;
+            z-index: 50;
             text-transform: uppercase;
             margin-top: 60px;
             text-align: center;
