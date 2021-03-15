@@ -67,6 +67,8 @@ function Splash() {
               font-size: 44px;
               line-height: 1em;
             }
+            @media (min-width: 768px) {
+              line-height: 1.5em;
           `}
         >
           <h1>{title}</h1>
@@ -80,6 +82,9 @@ function Splash() {
                 font-size: 56px;
                 letter-spacing: 1.2rem;
                 line-height: 1em;
+              }
+              @media (min-width: 768px) {
+                line-height: 1.5em;
               }
             `}
           >
