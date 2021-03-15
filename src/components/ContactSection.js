@@ -85,6 +85,7 @@ function ContactSection() {
             transform: translateY(2%);
             @media (min-width: 768px) {
               height: auto;
+              width: 100%;
             }
           `}
         />
