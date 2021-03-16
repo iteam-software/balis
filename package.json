@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "preload-fonts": "gatsby-preload-fonts",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -21,6 +22,7 @@
     "gatsby-plugin-emotion": "^6.0.0",
     "gatsby-plugin-image": "^1.0.1",
     "gatsby-plugin-netlify-cms": "^5.0.0",
+    "gatsby-plugin-preload-fonts": "^2.0.0",
     "gatsby-plugin-sharp": "^3.0.1",
     "gatsby-plugin-sitemap": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",

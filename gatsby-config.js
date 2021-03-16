@@ -13,6 +13,7 @@ module.exports = {
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-emotion",
     "gatsby-plugin-image",
+    `gatsby-plugin-preload-fonts`,
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
