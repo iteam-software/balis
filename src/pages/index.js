@@ -2,9 +2,15 @@ import * as React from "react";
 import { Global, css } from "@emotion/core";
 import Splash from "../components/SplashSection";
 import ContactSection from "../components/ContactSection";
+import { Helmet } from "react-helmet"
 const IndexPage = () => {
   return (
     <main>
+    <Helmet>
+    <meta charSet="utf-8" />
+    <title>Balis & Company</title>
+    <meta name="description" content="Balis and Company Project Control & Cost Estimating"/>
+  </Helmet>
       <Global
         styles={css`
           body {
