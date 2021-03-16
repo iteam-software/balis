@@ -36,9 +36,11 @@ function Splash() {
         <StaticImage
           src="../images/balis-logo.png"
           alt="logo"
+          placeholder="blurred"
         />
         <StaticImage
           src="../images/splash.png"
+          placeholder="blurred"
           alt="Architechture Structure"
           css={css`
             @media (min-width: 1268px) {

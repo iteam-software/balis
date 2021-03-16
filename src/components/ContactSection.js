@@ -77,6 +77,7 @@ function ContactSection() {
         <StaticImage
           src="../images/skyline.png"
           alt="Albuquerque Skyline"
+          placeholder="blurred"
           css={css`
           height: 225px;
           overflow: hidden;
